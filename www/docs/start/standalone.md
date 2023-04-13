@@ -137,6 +137,8 @@ pnpm create vite
 </TabItem>
 </MultiPackagerCode>
 
+Follow the `vite` instructions to `cd` into the `web` directory and install the packages.
+
 Add it to your stacks and link the API to it.
 
 ```ts title="stacks/MyStack.ts" {6}
@@ -154,7 +156,7 @@ const web = new StaticSite(stack, "web", {
 
 #### Call your API
 
-Start Vite locally and bind SST to it.
+Start Vite locally and bind SST to it. Again, run the following commands from the `packages/web` directory.
 
 <MultiPackagerCode>
 <TabItem value="npm">
